@@ -35,10 +35,12 @@
       </li>
     </ol>
     <div class="nav">
-      <a *ngIf="listStart !== 1" [routerLink]="['/' + storiesType, pageNum - 1]" routerLinkActive="active" class="prev">
+      <a *ngIf="listStart !== 1" [routerLink]="['/' + storiesType, pageNum - 1]" routerLinkActive="active" class="prev"
+         rel="noopener noreferrer">
         ‹ Prev
       </a>
-      <a *ngIf="items.length === 30" [routerLink]="['/' + storiesType, pageNum + 1]" routerLinkActive="active" class="more">
+      <a *ngIf="items.length === 30" [routerLink]="['/' + storiesType, pageNum + 1]" routerLinkActive="active" class="more"
+         rel="noopener noreferrer">
         More ›
       </a>
     </div>

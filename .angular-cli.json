@@ -57,5 +57,10 @@
     "lazyRoutePrefix": "+",
     "component": {
     }
+  },
+  "component": {
+    "spec": true,
+    "inlineStyle": false,
+    "inlineTemplate": false
   }
 }

@@ -17,6 +17,9 @@ module.exports = {
     navigateFallback: '/index.html',
     runtimeCaching: [{
         urlPattern: /node-hnapi\.herokuapp\.com/,
+        // The toolbox will try to handle the request first by retrieving from the network and if that succeeds,
+        // it will cache the response. When this fails (flaky/unavailable network), it will fetch directly from
+        // the cache.
         handler: 'networkFirst'
     }]
 };

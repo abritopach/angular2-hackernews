@@ -11,8 +11,9 @@ import { HackerNewsAPIService } from '../hackernews-api.service';
 })
 export class UserComponent implements OnInit {
 
-  sub: any;
-  user: any;
+    sub: any;
+    user: any;
+    errorMessage = '';
 
   constructor(private hackerNewsAPIService: HackerNewsAPIService, private activatedRoute: ActivatedRoute,
               private location: Location) {
@@ -30,5 +31,4 @@ export class UserComponent implements OnInit {
     goBack() {
         this.location.back();
     }
-
 }

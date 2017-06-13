@@ -13,7 +13,7 @@
     </div>
     <div class="laptop" [class.item-header]="item.comments_count > 0 || item.type === 'job'" [class.head-margin]="item.text">
       <p>
-        <a class="title" href="{{item.url}}">
+        <a class="title" href="{{item.url}}" rel="noopener noreferrer">
           {{item.title}}
         </a>
         <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
@@ -21,7 +21,7 @@
       <div class="subtext">
         <span>
         {{item.points}} points by
-          <a href="">{{item.user}}</a>
+          <a href="" rel="noopener noreferrer">{{item.user}}</a>
         </span>
         <span>
           {{item.time_ago}}
